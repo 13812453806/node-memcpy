@@ -38,11 +38,13 @@ module.exports = {
                     test.strictEqual(hex(b2), "0189ABCD89ABCDEF");
                     test.strictEqual(memcpy(b2, b1), 8);
                     test.strictEqual(hex(b2), "0123456789ABCDEF");
+					test.log(hex(b1));
+					test.log(hex(b2));
                     test.strictEqual(memcpy(b2, b1, 4), 4);
                     test.strictEqual(hex(b2), "89ABCDEF89ABCDEF");
                     test.throws(function() {
-                        memcpy(b2, 1, b1);
-                    }, Error);
+						memcpy(b2, 1, b1);
+					}, Error);
                     test.strictEqual(hex(b2), "89ABCDEF89ABCDEF");
                 });
             });

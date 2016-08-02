@@ -22,7 +22,7 @@
   ],
   "dependencies": {
     "bindings": "~1.1",
-    "nan": "~1.2.0",
+    "nan": "~2.4.0",
     "node-arraybuffer": "^1.0.11"
   },
   "devDependencies": {
